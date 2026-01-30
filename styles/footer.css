@@ -1,0 +1,149 @@
+.footer {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-left p {
+    color: var(--color-text-grey);
+}
+
+.header__logo__footer {
+    width: 75px;
+    height: 25px;
+}
+
+
+.footer a {
+    color: var(--color-text-grey);
+}
+
+.footer a:hover {
+    color: var(--color-text-grey-dark);
+}
+
+.footer-top {
+    display: flex;
+    gap: 116px;
+    justify-content: space-between;
+    margin-bottom: 131px;
+}
+
+.footer-middle {
+    max-width: 470px;
+    height: 170px;
+}
+
+.footer-middle-column {
+    display: flex;
+    gap: 73px;
+}
+
+.header__logo__footer {
+    display: flex;
+    justify-content: start;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-middle__left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer-middle__right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-wrapper {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--color-text-grey-dark);
+    margin-bottom: 21px;
+}
+
+.footer_item {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.footer_item-p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.footer-bottom__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #E0E0E0;
+    padding-top: 36px;
+    margin-bottom: 40px;
+}
+
+.footer-link {
+    display: flex;
+    gap: 54px;
+}
+
+.copyright {
+    color: var(--color-text-grey);
+}
+
+@media(max-width: 1240px) {
+    .footer-top {
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .footer-middle-column {
+        gap: 50px;
+    }
+
+    .footer-bottom {
+        padding: 30px;
+    }
+
+    .footer-top {
+        margin-bottom: 0;
+    }
+
+}
+
+@media(max-width: 950px) {
+    .footer-bottom__wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-link {
+        gap: 10px;
+    }
+
+    .footer-top {
+        margin-bottom: 0;
+    }
+}

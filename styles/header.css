@@ -1,0 +1,35 @@
+.header {
+    border-bottom: 1px solid #EAEAEA;
+    position: relative;
+    margin-bottom: 88px;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav {
+    display: flex;
+    padding: 40px;
+    gap: 60px;
+    margin: 0;
+}
+
+.header__logo {
+    position: absolute;
+    top: 36px;
+    left: 42px;
+}
+
+@media (max-width: 1000px) {
+    .header__logo {
+        position: static;
+    }
+
+    .header__wrapper {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+}
