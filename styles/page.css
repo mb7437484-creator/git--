@@ -1,11 +1,4 @@
 /* section {
-    background-image: url(../images//backround2.jpg);
-    width: 1920;
-    height: 921;
-    top: 105px;
-}
-
-section {
     background-image: url(../images/Ellipse.svg);
     width: 357;
     height: 229;
@@ -13,3 +6,44 @@ section {
     left: 786px;
 
 } */
+
+/* .backgroundImg {
+    background-image: url(../images/background3.svg);
+} */
+
+/* section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/background3.svg") center / cover no-repeat;
+    opacity: 0.3;
+    z-index: 0;
+} */
+
+.bg {
+    position: absolute;
+    inset: 0;
+    background: url("../images/background3.svg") center / contain no-repeat;
+    z-index: -1;
+    width: 1920px;
+    height: 921px;
+    top: 100px;
+    margin: 0 auto;
+}
+
+.bg2 {
+    position: absolute;
+    inset: 0;
+    background: url("../images/Ellipse2.svg") center / contain no-repeat;
+    z-index: -1;
+    width: 1920px;
+    height: 921px;
+    top: 100px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1920px) {
+    .bg {
+        display: none;
+    }
+}
