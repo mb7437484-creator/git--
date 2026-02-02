@@ -21,6 +21,9 @@
     position: absolute;
     top: 36px;
     left: 42px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -32,9 +35,7 @@
         flex-direction: column;
         padding-top: 20px;
     }
-}
 
-@media(max-width: 450px) {
     .header {
         margin-bottom: 30px;
     }

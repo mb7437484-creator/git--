@@ -58,6 +58,15 @@
     font-size: 79px;
     line-height: 100%;
     margin-bottom: 129px;
+    text-align: center;
+}
+
+.hero-text-price {
+    margin-bottom: 46px;
+}
+
+.description-hero-price {
+    margin-bottom: 97px;
 }
 
 /* search-container */
@@ -83,13 +92,16 @@
     border-radius: 72px;
     padding: 13px 31px;
     background-color: var(--color--primary);
-    color: var(--color-white);
     position: absolute;
     right: 0;
     font-weight: 400;
     font-size: 25px;
     line-height: 100%;
     height: 56px;
+}
+
+.search__button a {
+    color: var(--color-white);
 }
 
 .search__button:hover {
@@ -127,6 +139,10 @@
     color: var(--color-text-grey);
     margin: 0 298px 54px;
 
+}
+
+.description-hero-price {
+    text-align: center;
 }
 
 /* card */
@@ -297,6 +313,51 @@
     margin-bottom: 400px;
 }
 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 88px;
+}
+
+.tag {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 4px 8px;
+    background: #F4F4F4;
+    white-space: nowrap;
+}
+
+.characteristics h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 110%;
+}
+
+.ULcharacteristics {
+    padding: 0;
+}
+
+.ULcharacteristics li {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    margin-bottom: 12px;
+    font-weight: 600px;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-text-grey);
+}
+
+.characteristics-item-right {
+    text-align: right;
+    white-space: nowrap;
+}
+
 @media (max-width: 1500px) {
     .card {
         grid-template-columns: repeat(2, 1fr);
@@ -401,6 +462,10 @@
     .questions-container {
         width: 350px;
         padding: 20px;
+    }
+
+    .hero-text-price {
+        margin: 20px;
     }
 }
 

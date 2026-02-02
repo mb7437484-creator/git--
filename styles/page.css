@@ -42,7 +42,26 @@
     margin: 0 auto;
 }
 
-@media (max-width: 1920px) {
+.AIDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.AIname {
+    font-weight: 700;
+    font-size: 79px;
+    line-height: 100%;
+    margin: 0 0 46px;
+}
+
+.IconAI {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1919px) {
     .bg {
         display: none;
     }
