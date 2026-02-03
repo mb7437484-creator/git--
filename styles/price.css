@@ -118,6 +118,11 @@
     color: #A4B2DF;
 }
 
+.characteristics-card-price-grade {
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+
 .card__link-price {
     margin: 10px 0 45px;
 }
@@ -126,7 +131,7 @@
     margin-bottom: 70px;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1450px) {
     .card-price-item {
         margin: 30px;
     }
