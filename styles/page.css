@@ -1,4 +1,3 @@
-
 .bg {
     position: absolute;
     inset: 0;
@@ -38,6 +37,10 @@
 
 .IconAI {
     margin-bottom: 24px;
+}
+
+.argumentList-AIname {
+    margin-bottom: 201px;
 }
 
 @media (max-width: 1919px) {

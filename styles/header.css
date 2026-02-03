@@ -39,4 +39,8 @@
     .header {
         margin-bottom: 30px;
     }
+
+    .header__nav {
+        padding: 25px 40px;
+    }
 }
