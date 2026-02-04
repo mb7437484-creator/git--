@@ -1,4 +1,3 @@
-
 .bg {
     position: absolute;
     inset: 0;
@@ -47,10 +46,37 @@
 .categories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 136px 90px;
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-bottom: 683px;
 }
 
 @media (max-width: 1919px) {
     .bg {
         display: none;
+    }
+
+    .bg2 {
+        display: none;
+    }
+
+    .categories {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .categories {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 }
