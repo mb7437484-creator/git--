@@ -36,29 +36,16 @@
     margin: 16px 0;
 }
 
-@media (max-width: 1920px) {
-    .characteristics {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 30px;
-
-    }
-}
-
 @media (max-width: 1200px) {
     .characteristics {
         flex-direction: column;
-        gap: 10px;
-        overflow: hidden
+        margin: 0 auto;
+        justify-content: center;
+        padding: 30px;
     }
 
     .characteristics-left {
-        margin: 0 auto;
-    }
-
-    .characteristics-right {
-        margin: 0 auto;
+        justify-content: center;
     }
 
     .uldemo {
@@ -91,11 +78,5 @@
     .AIname {
         margin: 0;
         font-size: 59px;
-    }
-
-    .characteristics-right {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }
