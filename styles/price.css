@@ -128,7 +128,7 @@
 }
 
 .card-price {
-    margin-bottom: 70px;
+    margin: 97px 0 70px;
 }
 
 @media (max-width: 1450px) {
@@ -167,6 +167,10 @@
 
     .Ul-prace-left-section {
         max-width: 100%;
+    }
+
+    .card-price {
+        margin: 10px 0 70px;
     }
 
 

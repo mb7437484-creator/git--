@@ -66,7 +66,11 @@
 }
 
 .description-hero-price {
-    margin-bottom: 97px;
+    max-width: 1324px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 55px;
 }
 
 /* search-container */
@@ -122,6 +126,7 @@
 .search {
     display: flex;
     justify-content: center;
+    margin-bottom: 130px;
 }
 
 /* text */
@@ -129,11 +134,14 @@
 .Header-text {
     font-weight: 600;
     font-size: 50px;
-    margin: 130px 298px 25px;
+    margin: 0 auto;
+    max-width: 1324px;
+    margin-bottom: 25px;
 }
 
 .Header-text-AIname {
-    margin-left: 278px;
+    max-width: 1324px;
+    margin: 0 auto;
     margin-bottom: 38px;
 }
 
@@ -142,12 +150,13 @@
     font-size: 20px;
     line-height: 150%;
     color: var(--color-text-grey);
-    margin: 0 298px 54px;
+    margin: 0 auto;
+    max-width: 1324px;
 
 }
 
-.description-hero-price {
-    text-align: center;
+.description_card {
+    margin-bottom: 54px;
 }
 
 /* card */
@@ -172,9 +181,19 @@
 }
 
 .card__icon {
+    display: flex;
+    gap: 20px;
     font-weight: 400;
     font-size: 20px;
     line-height: 213%;
+    color: var(--color-text-grey);
+}
+
+.card__icon a {
+    color: #4E4E4E;
+}
+
+.card__icon a:hover {
     color: var(--color-text-grey);
 }
 
@@ -186,11 +205,6 @@
     padding: 24px;
     background: linear-gradient(180deg, #E7ECFF 0%, #FFFFFF 35.27%);
 
-}
-
-.card__icon {
-    display: flex;
-    gap: 20px;
 }
 
 .card__link {
@@ -235,7 +249,8 @@
 
 .topic {
     display: flex;
-    margin-left: 302px;
+    margin: 0 auto;
+    max-width: 1324px;
     margin-bottom: 114px;
     gap: 180px;
 }
@@ -251,7 +266,8 @@
     display: flex;
     flex-direction: column;
     gap: 26px;
-    margin-left: 298px;
+    max-width: 1324px;
+    margin: 0 auto;
     margin-bottom: 32px;
 }
 
@@ -259,7 +275,9 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 110%;
-    margin-left: 298px;
+    max-width: 1324px;
+    margin: 0 auto;
+    margin-bottom: 31px;
 }
 
 .argumentList-item {
@@ -316,6 +334,7 @@
     align-items: center;
     gap: 16px;
     margin-bottom: 400px;
+
 }
 
 .tags {
@@ -326,6 +345,7 @@
     max-width: 900px;
     margin: 0 auto;
     margin-bottom: 88px;
+    padding: 10px;
 }
 
 .tag {
@@ -338,7 +358,8 @@
 }
 
 .characteristics {
-    margin-left: 286px;
+    max-width: 1324px;
+    margin: 0 auto;
     margin-bottom: 93px;
     display: flex;
     gap: 180px;
@@ -374,34 +395,77 @@
     line-height: 100%;
 }
 
+.argumentList {
+    padding: 0 30px;
+    margin-bottom: 75px;
+}
+
+.description-hero-price {
+    padding: 0 30px 55px;
+}
+
 @media (max-width: 1500px) {
     .card {
         grid-template-columns: repeat(2, 1fr);
-        margin: 0 50px;
-    }
-
-    .topic {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        padding: 30px;
-        gap: 40px;
+        margin: 77px 50px;
     }
 
     .questions-container {
         justify-content: center;
         display: flex;
-        width: 900px;
+        max-width: 100%;
+        padding: 0 30px;
     }
 
     .questions {
         margin-bottom: 50px;
     }
+
+    .search {
+        margin-bottom: 40px;
+    }
+
+    .topic {
+        margin-left: 30px;
+    }
+
+    .description {
+        margin-left: 30px;
+    }
+
+    .Header-text {
+        margin-left: 30px;
+    }
+
+    .description-hero-price {
+        margin: 0 auto;
+
+    }
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1400px) {
     .hero-text {
         font-size: 49px;
+        margin-bottom: 70px;
+        margin-top: 50px;
+    }
+
+    .characteristics {
+        margin: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .characteristics {
+        gap: 10px;
+    }
+
+}
+
+@media(max-width: 700px) {
+    .hero-text {
+        font-size: 23px;
+        padding: 0 20px;
         margin-bottom: 70px;
         margin-top: 50px;
     }
@@ -412,43 +476,6 @@
         margin: 30px 50px;
         font-size: 40px;
         text-align: center;
-    }
-
-    .description {
-        display: flex;
-        justify-content: center;
-        margin: 30px 50px;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .argumentList {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .argumentList-description {
-        margin: 20px auto;
-        font-size: 16px;
-        padding: 0;
-    }
-
-    .argumentList-title {
-        margin: 20px auto;
-    }
-
-    .questions-container {
-        width: 600px;
-    }
-}
-
-@media(max-width: 700px) {
-    .hero-text {
-        font-size: 23px;
-        padding: 0 20px;
-        margin-bottom: 70px;
-        margin-top: 50px;
     }
 
     .search__input {
@@ -475,13 +502,21 @@
         margin: 30px 30px;
     }
 
-    .questions-container {
-        width: 350px;
-        padding: 20px;
-    }
-
     .hero-text-price {
         margin: 20px;
+    }
+
+    .argumentList-description {
+        padding: 0;
+    }
+
+    .topic {
+        margin: 30px;
+        gap: 40px;
+    }
+
+    .description-hero-price {
+        padding: 0;
     }
 }
 
